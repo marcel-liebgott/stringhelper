@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery Stringhelper</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/style.css"></style>
+
+		<script type="text/JavaScript" src="./js/jquery-2.1.1.min.js"></script>
+		<script type="text/JavaScript" src="./js/Stringhelper.js"></script>
+		<script type="text/JavaScript" src="./js/script.js"></script>
+	</head>
+	<body>
+		<h1>Stringhelper.js</h1>
+		<div class="container description">
+			Mit hilfe des jQuery Plugins Stringhelper ist es möglich, URL's und E-Mail's, welche als Klartext angabe in Text stehen durch klickbare Links zu ersetzen. Hierbei wird eine ganze Reihe von URL's und Mail erkannt. Hierunter fallen die Protokolle HTTP, HTTPS und FTP. Bei dem FTP Protokoll kann beispielhaft mit oder ohne der Usernamen und Passwort kombination gearbeitet werden.
+		</div>
+		<div class="container">
+			<h3>Original Text</h3>
+			<div class="border padding" id="source">
+				Hier steht schöner Text, ab und zu mal eine URL wie www.google.de oder auch mal http://www.google.de/test/stuff/~magic ftp://user:password@www.google.de:21 usw usw. Spannend wird es auch mit einer E-Mail Adresse: marcel@mliebgott.de und auch mailto:marcel@mliebgott.de<br>
+				Ein neuer Absatz<br>
+
+				Und hier schon wieder einer
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Nach dem parsen mittels des Stringhelpers</h3>
+			<div class="margin-top border padding" id="target">
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Statistiken</h3>
+			<div class="border padding">
+				<p><b>Anzahl Wörter:<b> <span id="statCountWords"></span></p>
+				<p><b>durchschnittliche Wortlänge:<b> <span id="statAverageWordLength"></span></p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Utils</h3>
+			<div class="border padding">
+				<p><b>Random (Int):<b> <span id="random"></span></p>
+				<p><b>Random (Int und String):<b> <span id="randomIntString"></span></p>
+				<p><b>Random (String):<b> <span id="randomString"></span></p>
+				<p><b>Valid URL:<b> www.google.de: <span id="validUrl1"></span> bla@google.de: <span id="validUrl2"></span></p>
+				<p><b>Valid Mail:<b> marcel@mliebgott.de: <span id="validMail1"></span> test@.de: <span id="validMail2"></span></p>
+				<p><b>Valid IPv4:<b> 192.168.0.1: <span id="validIp4_1"></span> 256.192.260.300: <span id="validIp4_2"></span></p>
+				<p><b>Valid IPv6:<b> 2001:0db8:85a3:08d3:1319:8a2e:0370:7344: <span id="validIp6_1"></span> 2001:0gb8:85a3:08d3:1319:8a2e:0370:7344: <span id="validIp6_2"></span></p>
+				<p><b>Starts with:<b> Marcel Liebgott (Marcel): <span id="startswith1"></span> Marcel Liebgott (test): <span id="startswith2"></span></p>
+				<p><b>Ends with:<b> Marcel Liebgott (Liebgott): <span id="endswith1"></span> Marcel Liebgott (test): <span id="endswith2"></span></p>
+				<p><b>Link Keywords (PHP):<b> <span id="linkKeywords"></span></p>
+			</div>
+		</div>
+
+		<div class="footer container">
+			<p>
+				&copy; 2014 <a href="http://www.mliebgott.de" target="_blank" title="mliebgott.de">mliebgott.de</a>
+			</p>
+		</div>
+	</body>
+</html>
