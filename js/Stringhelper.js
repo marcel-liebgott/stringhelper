@@ -20,7 +20,7 @@
 		parseTextReplaceUrlToLink: function(text){
 			var resultString = "";
 			var stringArray = text.split(/\s+/);
-			var regexHttp = /^((http|https|ftp):\/\/)?([a-zA-Z0-9]+:[a-zA-Z0-9]+\@)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?$/g;
+			var regexHttp = /^((ftp|http|https):\/\/)?([a-zA-Z0-9]+:[a-zA-Z0-9]+\@)?([a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))(:[0-9]{1,5})?((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?$/g;
 			var regexProtocol = /^((http|https|ftp):\/\/)/i;
 
 			// check each word if that an verified link
